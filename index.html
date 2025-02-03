@@ -107,125 +107,39 @@
       </nav>
     </header>
     <main>
-      <section class=" hero-section grid">
-        <div>
-
-        </div>
-        <div>
-          <img
-                  class="feature__image"
-                  width="343"
-                  height="300"
-                  src="/img/hero-image.png"
-                  alt="image of an woman"
-          />
-        </div>
-
-      </section>
-      <article class="wrapper grid">
-        <section class="feature">
-          <picture class="feature__picture">
-            <source
-              media="(min-width: 43.75em)"
-              srcset="
-                /img/feature-desktop.jpg    1x,
-                /img/feature-desktop-2x.jpg 2x
-              "
-              width="730"
-              height="300"
-            />
-            <img
-              class="feature__image"
-              width="343"
-              height="300"
-              src="/img/feature-mobile.jpg"
-              alt="assortment of colorful blocks"
-              srcset="/img/feature-mobile-2x.jpg 2x"
-            />
-          </picture>
-
-          <h1 class="feature__headline">The Bright Future of Web 3.0?</h1>
-          <div class="feature__description">
-            <p>
-              We dive into the next evolution of the web that claims to put the
-              power of the platforms back into the hands of the people. But is
-              it really fulfilling its promise?
+      <section class=" hero-section">
+        <div class="wrapper grid-2-col">
+          <div class="hero-section__content">
+            <h1 class="hero-section__title">
+              Where Teams Thrive and Ideas Come to Life
+            </h1>
+            <p class="hero-section__description">
+              With site233.xmastrodem.com, a visual project management platform for teams, simplify planning, organizing, and delivering tasks. Empower your team with tools that streamline workflows, foster collaboration, and turn ideas into reality—achieving more together, effortlessly.
             </p>
-            <a class="feature__button" href="">Read More</a>
+            <button class="hero-section__btn primary-button">
+              Learn More
+            </button>
           </div>
-        </section>
-        <section class="new">
-          <h2 class="new__title">New</h2>
-          <article class="new__post">
-            <h3>
-              <a class="new__headline" href="">Hydrogen VS Electric Cars</a>
-            </h3>
-            <p class="new__description">
-              Will hydrogen-fueled cars ever catch up to EVs?
-            </p>
-          </article>
-          <article class="new__post">
-            <h3>
-              <a class="new__headline" href="">The Downsides of AI Artistry</a>
-            </h3>
-            <p class="new__description">
-              What are the possible adverse effects of on-demand AI image
-              generation?
-            </p>
-          </article>
-          <article class="new__post">
-            <h3>
-              <a class="new__headline" href="">Is VC Funding Drying Up?</a>
-            </h3>
-            <p class="new__description">
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </p>
-          </article>
-        </section>
-        <section class="blog">
-          <article class="blog__item">
+          <div class="hero-section__image-container">
             <img
-              src="/img/news-1.jpg"
-              alt="retro computer, keyboard, cassette tapes on a desk"
-              class="blog__image"
+                    class="hero-section__feature-image"
+                    width="343"
+                    height="300"
+                    src="/img/hero-image.png"
+                    alt="image of an woman"
             />
-            <div class="blog__number">01</div>
-            <h3 class="blog__headline"><a href="">Reviving Retro PCs</a></h3>
-            <p class="blog__description">
-              What happens when old PCs are given modern upgrades?
-            </p>
-          </article>
-          <article class="blog__item">
-            <img
-              src="/img/news-2.jpg"
-              alt="keyboard with red backlighting"
-              class="blog__image"
-            />
-            <div class="blog__number">02</div>
-            <h3 class="blog__headline">
-              <a href="">Top 10 Laptops of 2022</a>
-            </h3>
-            <p class="blog__description">
-              Our best picks for various needs and budgets.
-            </p>
-          </article>
-          <article class="blog__item">
-            <img
-              src="/img/news-3.jpg"
-              alt="game controller in the air above a hand"
-              class="blog__image"
-            />
-            <div class="blog__number">03</div>
-            <h3 class="blog__headline"><a href="">The Growth of Gaming</a></h3>
-            <p class="blog__description">
-              How the pandemic has sparked fresh opportunities.
-            </p>
-          </article>
-        </section>
-      </article>
+          </div>
+        </div>
+      </section>
+      <section class="wrapper feature-section">
+        <h6 class="feature-section__title"><span>-</span> Features</h6>
+        <h4 class="feature-section__subtitle">Why February First?</h4>
+        <div id="feature_list" class="feature-section__feature-list">
+        </div>
+      </section>
     </main>
 
     <script type="module" src="/main.js"></script>
+    <script type="module" src="/scripts/features.js"></script>
   </body>
 </html>

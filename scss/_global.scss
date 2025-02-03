@@ -7,6 +7,7 @@
   --c-red: #f15d51;
   --c-silver: #c5c6ce;
   --c-yellow: #e9aa52;
+  --p-blue: #3B8EB6;
   --f-xl: #{clamp(
       u.rem(40),
       2.147887323943662rem + 1.5023474178403755vw,
@@ -66,6 +67,9 @@ h3 {
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
   margin: 0;
 }
@@ -104,6 +108,32 @@ li {
     grid-template-rows: u.rem(300) auto auto;
     gap: u.rem(30);
   }
+}
+
+.grid-2-col {
+  display: grid;
+  gap: u.rem(32);
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (width < u.em(1110)) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: u.rem(16);
+  }
+}
+
+.primary-button {
+  padding: u.rem(16) u.rem(32);
+  background-color: transparent;
+  border: 1px solid var(--c-white);
+  color: var(--c-white);
+  font-size: u.rem(16);
+  border-radius: u.rem(7);
+  transition: transform .5s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
 }
 
 .noscroll {
