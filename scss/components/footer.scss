@@ -1,0 +1,67 @@
+@use '../util' as u;
+
+.footer {
+  padding-top: u.rem(64);
+  padding-bottom: u.rem(48);
+  background-color: #e0f1fc;
+
+  &__logo {
+    width: u.rem(60);
+    height: u.rem(60);
+    animation: rollingCoin 2s linear infinite;
+    transform-origin: center;
+    display: inline-block;
+  }
+  @keyframes rollingCoin {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+  &__link-title {
+    font-size: u.rem(24);
+    padding-bottom: u.rem(16);
+  }
+  &__link {
+    font-size: u.rem(18);
+    padding: u.rem(8) u.rem(0);
+
+    @media (width <= u.em(480)) {
+      padding: u.rem(6) u.rem(0);
+    }
+  }
+  &__contact-info-title {
+    font-size: u.rem(24);
+    padding-bottom: u.rem(16);
+  }
+  &__info-list {
+
+  }
+  &__contact-info {
+    font-size: u.rem(18);
+    padding: u.rem(8) u.rem(0);
+
+    @media (width <= u.em(480)) {
+      padding: u.rem(6) u.rem(0);
+    }
+  }
+
+  &__copyrigth-section {
+    text-align: center;
+  }
+
+  &__footer-line {
+    height: 2px;
+    background-color: var(--p-blue);
+    margin-bottom: u.rem(12);
+    margin-top: u.rem(32);
+  }
+
+  &__copyright {
+    text-align: center;
+    font-size: u.rem(16);
+  }
+}

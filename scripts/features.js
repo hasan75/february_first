@@ -1,6 +1,3 @@
-// const featureList = document.querySelector('#feature_list');
-
-// Feature data array
 const features = [
     {
         image: "/img/f1.svg",
@@ -34,10 +31,8 @@ const features = [
     }
 ];
 
-// Get the feature list container
 const featureList = document.getElementById("feature_list");
 
-// Generate feature cards dynamically
 features.forEach(feature => {
     const featureCard = document.createElement("div");
     featureCard.classList.add("feature-card");
@@ -48,6 +43,5 @@ features.forEach(feature => {
     <p class="feature-card__feature-description">${feature.description}</p>
   `;
 
-    // Append the card to the container
     featureList.appendChild(featureCard);
 });

@@ -5,10 +5,10 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: 'index.html',
-                about: 'about.html', // Add all your pages here
+                about: 'about.html',
             },
             output: {
-                entryFileNames: '[name]/index.html', // Moves files into folders
+                entryFileNames: '[name]/index.html',
             },
         },
     },
