@@ -46,5 +46,10 @@
     &:hover {
       color: var(--c-red);
     }
+
+    &.active {
+      color: var(--c-red);
+      font-weight: bold;
+    }
   }
 }

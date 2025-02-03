@@ -33,6 +33,11 @@
       padding: u.rem(6) u.rem(0);
     }
   }
+
+  &__link-href {
+    text-decoration: none;
+    color: var(--c-gray)
+  }
   &__contact-info-title {
     font-size: u.rem(24);
     padding-bottom: u.rem(16);

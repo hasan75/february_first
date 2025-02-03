@@ -8,7 +8,15 @@ const media = window.matchMedia('(width < 69.375em)');
 const navContent = document.querySelector('.nav__content');
 const navOverlay = document.querySelector('.nav__overlay');
 
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll(".header__link");
 
+  links.forEach((link) => {
+    if (link.href === window.location.href) {
+      link.classList.add("active");
+    }
+  });
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   document.body.classList.add("show");
